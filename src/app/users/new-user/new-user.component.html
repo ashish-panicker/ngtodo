@@ -1,0 +1,31 @@
+<div>
+    <!-- TODO Form validation -->
+    <form (ngSubmit)="createUser()"
+        [formGroup]="userForm">
+        <div>
+            <label for="fullname">Fullname</label>
+            <input type="text"
+                name="fullname"
+                formControlName="fullname" />
+        </div>
+        <div>
+            <label for="username">Username</label>
+            <input type="text"
+                name="username"
+                formControlName="username" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email"
+                name="email"
+                formControlName="email" />
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"
+                name="password"
+                formControlName="password" />
+        </div>
+        <button type="submit">Create User</button>
+    </form>
+</div>

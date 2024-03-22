@@ -4,11 +4,12 @@ import { TodosFirebaseService } from './todos-firebase.service';
 import Todo from './todo';
 import { NgFor } from '@angular/common';
 import { LoremIpsum } from 'lorem-ipsum';
+import { NewUserComponent } from './users/new-user/new-user.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NewUserComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
